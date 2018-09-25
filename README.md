@@ -1,2 +1,2 @@
 # skelepress
-Wordpress theme based on Skeleton boilerplate
+Wordpress theme based on [Skeleton boilerplate](http://getskeleton.com)
