@@ -1,5 +1,8 @@
 # SkelePress theme
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d4ec8a... 0.8.0.1
 Wordpress theme based on [Skeleton boilerplate](http://getskeleton.com)
 
 ## Demo
