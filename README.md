@@ -24,4 +24,4 @@ SkelePress includes support for Infinite Scroll in Jetpack.
 ## Credits
 
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* Skeleton boilerplate http://getskeleton.com (C) 2018
+* Skeleton boilerplate http://getskeleton.com (C) by [Dave Gamach](https://twitter.com/dhg) 2018
