@@ -4,7 +4,7 @@ Wordpress theme based on [Skeleton boilerplate](http://getskeleton.com)
 
 ## Demo
 
-[artee.io/skelepress/](artee.io/skelepress/)
+[artee.io/skelepress/](http://artee.io/skelepress/)
 
 ## Installation
 
