@@ -26,11 +26,12 @@ SkelePress includes support for Infinite Scroll in Jetpack.
 * Opera latest
 * Safari latest
 * IE latest
+
 The above list is non-exhaustive. SkelePress works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
 
 ## Changelog
 
-[0.0.1](https://github.com/artee2025/SkelePress/archive/0.0.1.zip) - Initial draft
+* [0.0.1](https://github.com/artee2025/SkelePress/archive/0.0.1.zip) - Initial draft
 
 ## Credits
 
