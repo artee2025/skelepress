@@ -196,9 +196,9 @@ function the_end( $text ){
 function alter_comment_form_fields($fields){
 	$fields   = array(
 		'author' => '<p class="comment-form-fields-c u-pull-left">' .
-					 '<input id="author" name="author" type="text" placeholder="'.__( 'Name' ) .'*" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $html_req . ' />',
+					 '<input id="author" name="author" type="text" placeholder="'.__( 'Name', 'skelepress-theme' ) .'*" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $html_req . ' />',
 		'email'  => ''.
-					 '<input id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' placeholder="'.__( 'Email' ).'*" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $html_req . ' /></p>'
+					 '<input id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' placeholder="'.__( 'Email', 'skelepress-theme' ).'*" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $html_req . ' /></p>'
 						);
   return $fields;
 }
@@ -207,7 +207,7 @@ add_filter('comment_form_default_fields','alter_comment_form_fields');
 
 
 function alter_field_comment($a){
-	$a   = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" placeholder="'._x( 'Comment', 'noun' ) .'*" required="required"></textarea></p>';
+	$a   = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" placeholder="'._x( 'Comment', 'noun', 'skelepress-theme') .'*" required="required"></textarea></p>';
   return $a;
 }
 
