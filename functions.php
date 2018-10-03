@@ -150,8 +150,8 @@ function skelepress_theme_scripts() {
 	wp_enqueue_script( 'skelepress-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'skelepress-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_deregister_script('jquery');
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), null, true );
+	// wp_deregister_script('jquery');
+	// wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), null, true );
 	
 	wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', array('jquery'), '20180909', true );
 
