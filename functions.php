@@ -41,9 +41,9 @@ if ( ! function_exists( 'skelepress_theme_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on SkelePress theme, use a find and replace
-		 * to change 'skelepress-theme' to the name of your theme in all the template files.
+		 * to change 'skelepress' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'skelepress-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'skelepress', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -65,7 +65,7 @@ if ( ! function_exists( 'skelepress_theme_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'skelepress-theme' ),
+			'menu-1' => esc_html__( 'Primary', 'skelepress' ),
 		) );
 
 		/*
@@ -126,9 +126,9 @@ add_action( 'after_setup_theme', 'skelepress_theme_content_width', 0 );
  */
 function skelepress_theme_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'skelepress-theme' ),
+		'name'          => esc_html__( 'Sidebar', 'skelepress' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'skelepress-theme' ),
+		'description'   => esc_html__( 'Add widgets here.', 'skelepress' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -142,14 +142,14 @@ add_action( 'widgets_init', 'skelepress_theme_widgets_init' );
  */
 function skelepress_theme_scripts() {
 	wp_enqueue_style( 'normalize', get_template_directory_uri().'/Skeleton/css/normalize.css'  );
-	wp_enqueue_style( 'skelepress-theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'skelepress-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'skeleton', get_template_directory_uri().'/Skeleton/css/skeleton.css' );
 	// wp_enqueue_style( 'skeleton', get_template_directory_uri().'/custom.css' );
 	wp_enqueue_style( 'Raleway', get_template_directory_uri().'/fonts/Raleway-Regular.ttf' );
 
-	wp_enqueue_script( 'skelepress-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'skelepress-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'skelepress-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'skelepress-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	// wp_deregister_script('jquery');
 	// wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), null, true );
 	
@@ -190,15 +190,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 add_filter('the_content', 'the_end');
 function the_end( $text ){
-	return wp_trim_words( $text, 200, ' '.__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'skelepress-theme' ));
+	return wp_trim_words( $text, 200, ' '.__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'skelepress' ));
 }
 
 function alter_comment_form_fields($fields){
 	$fields   = array(
 		'author' => '<p class="comment-form-fields-c u-pull-left">' .
-					 '<input id="author" name="author" type="text" placeholder="'.__( 'Name', 'skelepress-theme' ) .'*" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $html_req . ' />',
+					 '<input id="author" name="author" type="text" placeholder="'.__( 'Name', 'skelepress' ) .'*" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $html_req . ' />',
 		'email'  => ''.
-					 '<input id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' placeholder="'.__( 'Email', 'skelepress-theme' ).'*" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $html_req . ' /></p>'
+					 '<input id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' placeholder="'.__( 'Email', 'skelepress' ).'*" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $html_req . ' /></p>'
 						);
   return $fields;
 }
@@ -207,7 +207,7 @@ add_filter('comment_form_default_fields','alter_comment_form_fields');
 
 
 function alter_field_comment($a){
-	$a   = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" placeholder="'._x( 'Comment', 'noun', 'skelepress-theme') .'*" required="required"></textarea></p>';
+	$a   = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" placeholder="'._x( 'Comment', 'noun', 'skelepress') .'*" required="required"></textarea></p>';
   return $a;
 }
 

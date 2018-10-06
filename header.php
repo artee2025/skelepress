@@ -22,7 +22,7 @@
 
 <body <?php body_class('code-snippets-visible'); ?>>
 <div id="page" class="site container">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skelepress-theme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'skelepress' ); ?></a>
 
 	<header id="masthead" class="site-header row">
 		<div class="site-branding twelve columns ">
@@ -46,7 +46,7 @@
 
 		<nav id="site-navigation" class="navbar main-navigation">
 		<div class = "container">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'skelepress-theme' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'skelepress' ); ?></button>
 			<?php
 			
 			wp_nav_menu( array(
