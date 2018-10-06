@@ -9,11 +9,11 @@
 
 get_header();
 if ( is_active_sidebar( 'sidebar-1' ) ) {
-	$class1= "nine columns";
+	$class1= "nine ";$class2= "columns";
 }
 ?>
 
-	<div id="primary" class="content-area docs-section <?php echo $class1; ?>">
+	<div id="primary" class="content-area docs-section <?php echo sanitize_html_class($class1).' '.sanitize_html_class($class2); ?>">
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">

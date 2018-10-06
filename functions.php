@@ -190,6 +190,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 add_filter('the_content', 'the_end');
 function the_end( $text ){
+	/* translators: %s: Continue reading query. */
 	return wp_trim_words( $text, 200, ' '.__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'skelepress' ));
 }
 
