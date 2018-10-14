@@ -4,11 +4,11 @@ Wordpress theme based on [Skeleton boilerplate](http://getskeleton.com)
 
 ## Demo
 
-[artee.io/skelepress/](http://artee.io/skelepress/)
+[artee.io/skelepress/](http://artee.io/pr/skelepress/)
 
 ## Installation
 
-1. [Download the zip](https://github.com/artee2025/SkelePress/archive/0.0.1.zip)
+1. [Download the zip](https://github.com/artee2025/SkelePress/archive/0.0.2.zip)
 2. In your admin panel, go to Appearance > Themes and click the Add New button.
 3. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 4. Click Activate to use your new theme right away.
@@ -29,8 +29,14 @@ SkelePress includes support for Infinite Scroll in Jetpack.
 
 The above list is non-exhaustive. SkelePress works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
 
+*What languages does the theme support?*
+
+* English
+* Russian
+
 ## Changelog
 
+* [0.0.2](https://github.com/artee2025/SkelePress/archive/0.0.2.zip) - Edits for wordpres.com theme directory
 * [0.0.1](https://github.com/artee2025/SkelePress/archive/0.0.1.zip) - Initial draft
 
 ## Credits
