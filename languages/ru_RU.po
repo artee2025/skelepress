@@ -151,7 +151,7 @@ msgid "_s"
 msgstr "_s"
 
 #. Theme URI of the plugin/theme
-msgid "https://underscores.me/"
+msgid "http://artee.io"
 msgstr "http://artee.io"
 
 #. Description of the plugin/theme
